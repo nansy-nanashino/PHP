@@ -7,6 +7,7 @@ class User {
   public static $count = 0;
   public function __construct($name) {
     $this->name = $name;
+    //クラス内からそのクラス（今いるクラス）を指定する
     self::$count++;
   }
   public function sayHi() {
